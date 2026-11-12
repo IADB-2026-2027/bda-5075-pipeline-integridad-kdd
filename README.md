@@ -69,11 +69,11 @@ from pathlib import Path
 import shutil
 
 def calcular_sha256(ruta_fichero):
- hasher \= hashlib.sha256()
- with open(ruta_fichero, 'rb') as f:
- while chunk := f.read(65536):
- hasher.update(chunk)
- return hasher.hexdigest()
+   hasher \= hashlib.sha256()
+   with open(ruta_fichero, 'rb') as f:
+      while chunk := f.read(65536):
+         hasher.update(chunk)
+   return hasher.hexdigest()
 
 \# Comprobación contra manifest_checksums.sha256 y segregación a quarantine/
 
