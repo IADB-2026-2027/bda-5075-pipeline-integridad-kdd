@@ -63,18 +63,21 @@ Fíjate que el primer paso en un entorno de producción consiste en asegurar que
 
 _Ejemplo de lógica esperada en Python:_
 
-import hashlib  
-from pathlib import Path  
+```
+import hashlib
+from pathlib import Path
 import shutil
 
-def calcular_sha256(ruta_fichero):  
- hasher \= hashlib.sha256()  
- with open(ruta_fichero, 'rb') as f:  
- while chunk := f.read(65536):  
- hasher.update(chunk)  
+def calcular_sha256(ruta_fichero):
+ hasher \= hashlib.sha256()
+ with open(ruta_fichero, 'rb') as f:
+ while chunk := f.read(65536):
+ hasher.update(chunk)
  return hasher.hexdigest()
 
 \# Comprobación contra manifest_checksums.sha256 y segregación a quarantine/
+
+```
 
 ## Fase 2: Pipeline de Limpieza, Coherencia y Detección de Outliers
 
