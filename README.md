@@ -116,5 +116,5 @@ Lo importante aquí es enlazar la preparación técnica con el valor que recibir
 El alumnado entregará un repositorio con la siguiente estructura:
 
 <div align="center">
-![Estructura del directorio](img/entregable.png)
+<img src="img/entregable.png" alt="Estructura del directorio">
 </div>
