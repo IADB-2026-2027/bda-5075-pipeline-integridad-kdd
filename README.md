@@ -63,7 +63,7 @@ Fíjate que el primer paso en un entorno de producción consiste en asegurar que
 
 _Ejemplo de lógica esperada en Python:_
 
-```
+```python
 import hashlib
 from pathlib import Path
 import shutil
